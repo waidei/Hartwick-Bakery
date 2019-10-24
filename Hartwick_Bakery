@@ -1,1 +1,16 @@
 
+sum = 0
+for num in input:
+    sum = sum +input
+
+average = sum / input
+print("The sum of the Cookies is: ", sum)
+print("The Average of the Sales on Cookies is: ", average)
+
+sum = 0
+for num in input:
+    sum = sum +input
+
+average = sum / input
+print("The sum of the Candy is: ", sum)
+print("The Average of the Sales on Candy is: ", average)

@@ -1,21 +1,15 @@
-#Isaac Waide
-#October 14, 2019
-#Hartwick Bakery
+# Isaac Waide
+# October 14, 2019
+# Hartwick Bakery
 
 cookies = []
 candy = []
 
-def cookie_input():
+
+def cookies_input():
     for ele in range(0, 6):
         value = int(input("Enter value for cookies sales"))
         cookies.append(value)
-sum = 0
-for num in input:
-    sum = sum +input
-
-average = sum / input
-print("The sum of the Cookies is: ", sum)
-print("The Average of the Sales on Cookies is: ", average)
 
 
 def candy_input():
@@ -23,14 +17,24 @@ def candy_input():
         value = int(input("Enter value for candy sales"))
         candy.append(value)
 
-sum = 0
-for num in input:
-    sum = sum +input
 
-average = sum / input
-print("The sum of the Candy is: ", sum)
-print("The Average of the Sales on Candy is: ", average)
-
+def mean(cookies_input):
+    total = 0
+    for num in cookies_input:
+        total = total + num
+    return total / len(cookies_input)
 
 
+def mode(cookies_input()):
+max_count = (0, 0)
+for num in cookies_input:
+        occurrences = cookies_input.count(num)
+        if occurrences > max_count[0]:
+            max_count = (occurrences, num)
+return max_count[1]
 
+
+cookies_input()
+candy_input()
+print(mean(cookies_input))
+print(mode(cookies_input))
