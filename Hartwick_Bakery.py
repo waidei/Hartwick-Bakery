@@ -2,6 +2,7 @@
 # October 14, 2019
 # Hartwick Bakery
 
+import statistics
 cookies = []
 candy = []
 
@@ -18,23 +19,56 @@ def candy_input():
         candy.append(value)
 
 
-def mean(cookies_input):
+def mean(cookies):
     total = 0
-    for num in cookies_input:
+    for num in cookies:
         total = total + num
-    return total / len(cookies_input)
+    return total / len(cookies)
 
 
-def mode(cookies_input()):
-max_count = (0, 0)
-for num in cookies_input:
-        occurrences = cookies_input.count(num)
-        if occurrences > max_count[0]:
-            max_count = (occurrences, num)
-return max_count[1]
+def mean(candy):
+    total = 0
+    for num in candy:
+        total = total + num
+    return total / len(candy)
+
+
+def cookiesAvg():
+    return statistics.mean(cookies)
+
+
+def cookies_max():
+    print(max(cookies))
+
+
+def cookies_min():
+    print(min(cookies))
+
+
+def candyAvg():
+    return statistics.mean(candy)
+
+
+def candy_max():
+    print(max(candy))
+
+
+def candy_min():
+    print(max(candy))
 
 
 cookies_input()
 candy_input()
-print(mean(cookies_input))
-print(mode(cookies_input))
+
+print(cookiesAvg)
+print(cookies_max())
+print(cookies_min())
+print(mean(cookies))
+
+print(candyAvg)
+print(candy_max())
+print(candy_min())
+print(mean(candy))
+
+
+
